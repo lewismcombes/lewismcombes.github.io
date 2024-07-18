@@ -154,13 +154,13 @@ var changeData = function(height) {
 	$("1_button").disabled = true
 	$("05_button").disabled = true
 
-	argData[0] = []
-	argData[1] = []
-	argData[2] = []
+	argData0 = []
+	argData1 = []
+	argData2 = []
 
-	absData[0] = []
-	absData[1] = []
-	absData[2] = []
+	absData0 = []
+	absData1 = []
+	absData2 = []
 
 	loadData(height,0,"arg")
 	loadData(height,1,"arg")
