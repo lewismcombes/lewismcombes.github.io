@@ -147,6 +147,13 @@ var findZeroes = function() {
 
 var changeData = function(height) {
 
+
+	$("4_button").disabled = true
+	$("r_button").disabled = true
+	$("2_button").disabled = true
+	$("1_button").disabled = true
+	$("05_button").disabled = true
+
 	argData0[0] = []
 	argData0[1] = []
 	argData0[2] = []
@@ -168,6 +175,14 @@ var changeData = function(height) {
 		drawOnCanvas(0)
 		drawOnCanvas(1)
 		drawOnCanvas(2)
+
+
+		$("4_button").disabled = false
+		$("r_button").disabled = false
+		$("2_button").disabled = false
+		$("1_button").disabled = false
+		$("05_button").disabled = false
+
 	}
 
 
@@ -186,8 +201,11 @@ var changeData = function(height) {
 			
 			drawTheComponents()
 			clearInterval(makeDataListsRefresh);
+
+			
 		} 
 	}
+
 
 }
 
