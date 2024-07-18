@@ -147,6 +147,15 @@ var findZeroes = function() {
 
 var changeData = function(height) {
 
+	argData0 = [];
+	absData0 = [];
+
+	argData1 = [];
+	absData1 = [];
+
+	argData2 = [];
+	absData2 = [];
+
 	loadData(height,0,"arg")
 	loadData(height,1,"arg")
 	loadData(height,2,"arg")
