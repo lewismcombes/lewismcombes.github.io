@@ -2,10 +2,48 @@
  font-size: 25px;
  font-family: Courier;
 }
- h1 {
-   font-size: 150%;
+
+body {
+  padding-bottom: 20px;
+}
+
+h1 {
+   font-size: 200%;
+   text-align: center;
  }
  
- h2 {
-   font-size: 120%;
+h2 {
+   font-size: 150%;
+   margin-top: 5px;
+   margin-bottom: 5px;
+ }
+
+h3 {
+   font-size: 110%;
+   margin-top: 2px;
+   margin-bottom: 2px;
+}
+
+post {
+            display: block;
+            background: #cdcdcd;
+            color: black;
+            margin: auto;
+            padding: 10px;
+            border-radius: 4px;
+            max-width: 900px;
+}
+
+innerNote {
+            display: none;
+            border-radius: 4px;
+            padding: 8px 24px;
+            border-style: ridge;
+            border-width: thin;
+            position: relative;
+}
+
+noteButton {
+            color: blue;
+            cursor:pointer;
 }
