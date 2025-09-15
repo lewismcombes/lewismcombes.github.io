@@ -154,6 +154,11 @@ var changeData = function(height) {
 	$("1_button").disabled = true
 	$("05_button").disabled = true
 
+	$("abs_button").disabled = true
+	$("arg_button").disabled = true
+	$("re_button").disabled = true
+	$("im_button").disabled = true 
+
 	argData0 = []
 	argData1 = []
 	argData2 = []
