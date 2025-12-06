@@ -228,7 +228,7 @@ var pixelMap = [];
 for (var i = 0; i < 500; i++) {
 	var newRow = [];
 	for (var j = 0; j < 500; j++) {
-		nn = nearestLatticePoint(i,j,N)
+		nn = nearestLatticePoint(j,i,N)
 		newRow.push(nn)
 	}
 	pixelMap.push(newRow)
