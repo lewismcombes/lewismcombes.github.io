@@ -41,8 +41,8 @@ var latticeToY = function(xf,yf,meshNum) {
 
 
 var nearestLatticePoint = function(x,y,meshNum) {
-	var yFloor = Math.floor( (-y + zeroPos[1])*meshNum/(resolution*b) )
-	var xFloor = Math.floor( (x - zeroPos[0] - (-y + zeroPos[1])/(2*b))*meshNum/resolution )
+	var xFloor = Math.floor( (-y + zeroPos[1])*meshNum/(resolution*b) )
+	var yFloor = Math.floor( (x - zeroPos[0] - (-y + zeroPos[1])/(2*b))*meshNum/resolution )
 
 	return [xFloor,yFloor]
 }
@@ -228,7 +228,7 @@ var pixelMap = [];
 for (var i = 0; i < 500; i++) {
 	var newRow = [];
 	for (var j = 0; j < 500; j++) {
-		nn = nearestLatticePoint(j,i,N)
+		nn = nearestLatticePoint(i,j,N)
 		newRow.push(nn)
 	}
 	pixelMap.push(newRow)
