@@ -265,10 +265,10 @@ var drawOnCanvas = function(n) {
 			//nn = nearestLatticePoint(i,j,N)
 			nn = pixelMap[i][j]
 			nnmod = [mod(nn[0],N), mod(nn[1],N)]
-			if (nn[0] == nnmod[0] && nn[1] == nnmod[1] ) {
+			if (nn[0] == nnmod[0] && nn[1] == nnmod[1] ) { // draw in the fundamental parallelogram
 				ctx.fillStyle = "hsl(" + String(Math.floor(agD[nn[1]][nn[0]]*360/(2*Math.PI))) + ",100%," + String(50-abD[nn[1]][nn[0]]*300) +"%)";
 				
-			} else {
+			} else { // outside the parallelogram, the plot is darkened 
 				ctx.fillStyle = "hsl(" + String(Math.floor(agD[mod(nn[1],N)][mod(nn[0],N)]*360/(2*Math.PI))) + ",100%," + String(20-abD[mod(nn[1],N)][mod(nn[0],N)]*100) + "%)";
 			}
 
